@@ -1,0 +1,99 @@
+/* 노멀라이징*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* 스타일 */
+body{
+    background-image: url(./img/cloud.jpeg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top{
+    width: 90vw;
+    height: 45vh;
+    margin: 0 auto;
+}
+
+.top .section{
+    width: calc(100% / 3);
+    height: 100%;
+    /* background-color: #222; */
+}
+.top .section2{
+    width: 33%;
+    height: 100%;
+    /* background-color: #222; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top .section2 .clock{
+    color: white;
+    font-size: 72px;  
+}
+
+.bottom{
+    width: 90vw;
+    height: 45vh;
+    /* background-color: #333; */
+    margin: 0 auto;
+}
+.bottom .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: #eee; */
+    display: flex;
+    align-items: center;
+}
+.bottom .box-wrap{
+    width: 100%;
+    height: 90%;
+}
+.bottom .box-wrap .box{
+    width: calc((100% - 30px)/ 7) ;
+    height: 100%;
+    margin-right: 5px;
+    background-color: #FAFAFA;
+    opacity: 76%;
+    border-radius: 20px;
+}
+.bottom .box-wrap .box:last-child{
+    margin-right: 0;
+    color: rgb(255, 95, 95);
+}
+.bottom .box-wrap .box p{
+    text-align: center;
+    margin-top: 10px;
+}
