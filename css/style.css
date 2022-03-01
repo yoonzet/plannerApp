@@ -26,13 +26,24 @@ a {
     display: block;
 }
 
+/* 폰트 */
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 스타일 */
 body{
-    background-image: url(./img/cloud.jpeg);
+    background-image: url('/img/cloud.jpeg');
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    font-family: 'KOTRAHOPE';
+    white-space: nowrap;
 }
 .wrap{
     position: absolute;
@@ -89,11 +100,16 @@ body{
     opacity: 76%;
     border-radius: 20px;
 }
+.bottom .box-wrap .box:nth-child(6){
+    color: cornflowerblue;
+
+}
 .bottom .box-wrap .box:last-child{
     margin-right: 0;
     color: rgb(255, 95, 95);
 }
 .bottom .box-wrap .box p{
     text-align: center;
+    font-size: 22px;
     margin-top: 10px;
 }
