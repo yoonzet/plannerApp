@@ -10,16 +10,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/login.js"></script>
     <script defer src="./js/clock.js"></script>
+    <script defer src="./js/quotes.js"></script>
+    <script defer src="./js/weekly-todo.js"></script>
+
 </head>
 <body>
     <div class="wrap">
        <div class="top row">
-        <div class="section cell">
-            <div class="bookmark">
+        <div class="section section1 cell">
+            <div class="quote">
+                <div></div>
+                <div></div>
+            </div>
+            <!-- <div class="bookmark">
                 <div class="google"></div>
                 <div class="naver"></div>
                 <div class="youtube"></div>
-            </div>
+            </div> -->
         </div>
         <div class="section section2 cell">
             <form class="login"></form>
@@ -38,6 +45,13 @@
         <div class="box-wrap row">
             <div class="box cell">
                 <p>MON</p>
+                <form id="todo-form">
+                    <input type="text" placeholder="✍🏻">
+                </form>
+                <ul id="todo-list">
+                    <!-- li > span, button (js에서 생성) -->
+                </ul>
+                <button>CLEAR</button>
             </div>
             <div class="box cell">
                 <p>TUE</p>

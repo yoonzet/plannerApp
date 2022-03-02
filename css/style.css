@@ -15,6 +15,7 @@ a {
     text-decoration: none;
 }
 
+
 /* 라이브러리 */
 .cell {
     float: left;
@@ -35,15 +36,16 @@ a {
 }
 
 /* 스타일 */
+.clock{
+    white-space: nowrap;    
+}
 body{
     background-image: url('/img/cloud.jpeg');
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
     font-family: 'KOTRAHOPE';
-    white-space: nowrap;
 }
 .wrap{
     position: absolute;
@@ -55,25 +57,40 @@ body{
     width: 90vw;
     height: 45vh;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top .section{
     width: calc(100% / 3);
     height: 100%;
     /* background-color: #222; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+.top .section1{
+    /* background-color: #fff; */
+    height: 70%;
+}
+.top .section1 .quote{
+    font-size: 18px;
+}
+
 .top .section2{
     width: 33%;
     height: 100%;
     /* background-color: #222; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 .top .section2 .clock{
     color: white;
     font-size: 72px;  
 }
+
+/* ------------< bottom  >------------ */
 
 .bottom{
     width: 90vw;
@@ -99,6 +116,7 @@ body{
     background-color: #FAFAFA;
     opacity: 76%;
     border-radius: 20px;
+    position: relative;
 }
 .bottom .box-wrap .box:nth-child(6){
     color: cornflowerblue;
@@ -111,5 +129,42 @@ body{
 .bottom .box-wrap .box p{
     text-align: center;
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+
+
+.bottom .box-wrap .box input{
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: #9995;
+    outline: none;
+    width: 90%;
+    height: 30px;
+    transform: translateX(5%);
+    margin: 20px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.bottom .box-wrap .box ul span{
+    margin-left: 20px;
+    line-height: 30px;
+}
+.bottom .box-wrap .box ul button{
+    border: 0px solid black;
+    background-color: transparent;
+    position: absolute;
+    font-size: 20px;
+    color: #888;
+    line-height: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+.bottom .box-wrap .box>button{
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: 20px;
+    color: #888;
 }
