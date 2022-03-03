@@ -161,10 +161,12 @@ body{
     right: 20px;
     cursor: pointer;
 }
-.bottom .box-wrap .box>button{
+
+.bottom .clear {
     position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
+    left: 50%;
     bottom: 20px;
+    transform: translateX(-50%);
     color: #888;
+    cursor: pointer;
 }
