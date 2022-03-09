@@ -1,124 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/login.js"></script>
     <script defer src="./js/clock.js"></script>
     <script defer src="./js/quotes.js"></script>
-    <script defer src="./js/weekly-todo.js"></script>
-
+    <script defer src="./js/todo.js"></script>
+    <script defer src="./js/calendar.js"></script>
 </head>
+
 <body>
     <div class="wrap">
-       <div class="top row">
-        <div class="section section1 cell">
-            <div class="quote">
-                <div></div>
-                <div></div>
-            </div>
-            <!-- <div class="bookmark">
+        <div class="top row">
+            <div class="section section1 cell">
+                <div class="quote">
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- <div class="bookmark">
                 <div class="google"></div>
                 <div class="naver"></div>
                 <div class="youtube"></div>
             </div> -->
-        </div>
-        <div class="section section2 cell">
-            <form class="login"></form>
-            <div class="clock">
-                <p>00:00</p>
+            </div>
+            <div class="section section2 cell">
+                <form class="login"></form>
+                <div class="clock">
+                    <p>00:00</p>
+                </div>
+            </div>
+            <div class="section section3 cell">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days">
+                        
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
-        <div class="section cell">
-            <div class="weather"></div>
+        <div class="bottom weekly">
+            <div class="title">
+                <p></p>
+            </div>
+            <div class="box-wrap row">
+                <div class="box cell">
+                    <p>MON</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here! ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                    <div class="clear">clear</div>
+
+                </div>
+                <div class="box cell">
+                    <p>TUE</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+                <div class="box cell">
+                    <p>WED</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+                <div class="box cell">
+                    <p>THU</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+                <div class="box cell">
+                    <p>FRI</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+                <div class="box cell">
+                    <p>SAT</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+                <div class="box cell">
+                    <p>SUN</p>
+                    <form class="todo-form">
+                        <input class="todo-input" required type="text" placeholder="Write here!  ✍🏻">
+                    </form>
+                    <ul class="todo-list">
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="bottom weekly">
-        <div class="title">
-            <p></p>
-        </div>
-        <div class="box-wrap row">
-            <div class="box cell">
-                <p>MON</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here! ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-                </ul>
-                <div class="clear">clear</div>
 
-            </div>
-            <div class="box cell">
-                <p>TUE</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
 
-                </ul>
-            </div>
-            <div class="box cell">
-                <p>WED</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-
-                </ul>
-            </div>
-            <div class="box cell">
-                <p>THU</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-
-                </ul>
-            </div>
-            <div class="box cell">
-                <p>FRI</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-
-                </ul>
-            </div>
-            <div class="box cell">
-                <p>SAT</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-
-                </ul>
-            </div>
-            <div class="box cell">
-                <p>SUN</p>
-                <form class="todo-form">
-                    <input required type="text" placeholder="Write here!  ✍🏻">
-                </form>
-                <ul class="todo-list">
-                    <!-- li > span, button (js에서 생성) -->
-
-                </ul>
-            </div>
-
-        </div>
-    </div> 
-    </div>
-    
-    
 </body>
+
 </html>
