@@ -42,6 +42,9 @@ body{
     letter-spacing:2px;
 }
 
+/* .clock{
+    white-space: nowrap;    
+} */
 /* ------------< top >------------ */
 .hidden{
     opacity: 0;
@@ -59,8 +62,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-/* 로그인 */
 .login-bg{
     width: 100%;
     height: 100%;
@@ -151,75 +152,6 @@ body{
     transform: translateY(30%);
     padding: 0 20px;
 }
-.top .section3 {
-    color: #666; 
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-/* d-Day */
-.d-day .d-day-form{
-    width: 280px;
-    height: 260px;
-    background-color: #fff9;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px #8889 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing:0px;
-    color: #666;
-
-}
-.d-day .input-title{
-    all: unset;
-    width: 200px;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-}
-.d-day .date{
-    all: unset;
-    width: 200px;
-    height: 25px;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-    line-height: 25px;
-    margin: 30px 0;
-}
-.d-day .submit{
-    all: unset;
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    background-color: rgb(77, 126, 190);
-    border-radius: 12px;
-    font-size: 18px;
-    color: #fff;
-}
-.d-day .submit:hover{
-    transform: scale(0.99);
-}
-.d-day .d-daybox{
-    width: 300px;
-    height: 100px;
-    border-radius: 12px;
-    background-color: pink;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.d-day .d-daybox p{
-
-}
-
-
-/* 시계 */
 .top .clock h1{
     font-size: 30px;  
 }
@@ -227,7 +159,6 @@ body{
     font-size: 70px;  
 }
 
-/* 명언 */
 .top .quote{
     margin-top: 20px;
     font-size: 20px;
@@ -236,8 +167,13 @@ body{
     margin-top: 15px;
     font-size: 16px;
 }
-
-/* 캘린더 */
+.top .section3 {
+    color: #666; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .top .calendar{
     width: 50%;
     min-width: 300px;
@@ -329,7 +265,7 @@ body{
     color: #fff;
 }
 /* ------------< bottom  >------------ */
-/* 위클리 플래너 */
+
 .bottom{
     width: 90vw;
     height: 45vh;

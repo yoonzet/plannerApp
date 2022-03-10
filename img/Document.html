@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5501/?bdaymonth=2022-06 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/all.min.css">
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <script defer="" src="./Document_files/login.js"></script>
+    <script defer="" src="./Document_files/clock.js"></script>
+    <script defer="" src="./Document_files/quotes.js"></script>
+    <script defer="" src="./Document_files/todo.js"></script>
+    <script defer="" src="./Document_files/calendar.js"></script>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="login-bg hidden"></div>
+    <div class="login">
+        <form class="login-form hidden">
+            <h1>Let's Make a Plan!</h1>
+            <input type="text" placeholder="What your name?">
+        </form>
+        <div class="greeting">
+            <p>ㄴㄴ</p><p>'s Planner</p>
+            <i class="fas fa-sign-out-alt logout"></i>
+        </div>
+        
+    </div>
+
+    <div class="top row">
+        <div class="section section1 cell">
+            <div class="d-day">
+                <form">
+                    <label for="D-day">D-day:</label>
+                    <input type="date" name="d-day">
+                    <input type="submit" value="등록">
+                  
+            </form"></div>
+        </div>
+        <div class="section section2 cell">
+            <div class="clock">
+                <h1>2022. 2. 10 ( Thu ) </h1>
+                <p>20 : 00</p>
+            </div>
+            <div class="quote">
+                <div>When you reach the end of your rope, tie a knot in it and hang on.</div>
+                <div>- Franklin D. Roosevelt -</div>
+            </div>
+        </div>
+        <div class="section section3 cell">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                        <p>2022</p>
+                        <h1>March</h1>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+                <div class="days"><div class="prev-date">27</div><div class="prev-date">28</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div class="today">10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div><div class="next-date">1</div><div class="next-date">2</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom weekly">
+        <div class="title">
+            <p></p>
+        </div>
+        <div class="box-wrap row">
+            <div class="box cell">
+                <p>MON</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here! ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+                <div class="clear">clear</div>
+
+            </div>
+            <div class="box cell">
+                <p>TUE</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+            <div class="box cell">
+                <p>WED</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+            <div class="box cell">
+                <p>THU</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+            <div class="box cell">
+                <p>FRI</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+            <div class="box cell">
+                <p>SAT</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+            <div class="box cell">
+                <p>SUN</p>
+                <form class="todo-form">
+                    <input class="todo-input" required="" type="text" placeholder="Write here!  ✍🏻">
+                </form>
+                <ul class="todo-list">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

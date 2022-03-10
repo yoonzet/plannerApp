@@ -10,7 +10,7 @@ function getToday(){
     const month =String(date.getMonth());
     const dayNum =String(date.getDate()).padStart(2, "0");
     const day = week[date.getDay()];
-    today.innerText = (`${year}. ${month}. ${dayNum}. ( ${day} ) `);
+    today.innerText = (`${year}. ${month}. ${dayNum} ( ${day} ) `);
 }
 
 
