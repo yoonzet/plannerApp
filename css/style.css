@@ -207,15 +207,19 @@ body{
 }
 .d-day .d-daybox{
     width: 300px;
-    height: 100px;
+    height: 300px;
     border-radius: 12px;
     background-color: pink;
+    
+}
+.d-day .d-daybox li{
+    background-color: #ddd;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.d-day .d-daybox p{
-
 }
 
 
