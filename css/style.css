@@ -44,9 +44,7 @@ body{
 
 /* ------------< top >------------ */
 .hidden{
-    opacity: 0;
-    transform:scalez(0%);
-    transition: 0.5s; 
+    display: none;
 }
 .form-hidden{
     opacity: 0;
