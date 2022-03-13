@@ -48,6 +48,10 @@ body{
     transform:scalez(0%);
     transition: 0.5s; 
 }
+.form-hidden{
+    opacity: 0;
+    transform: scale(0);
+}
 
 .bg{
     width: 100%;
@@ -138,12 +142,12 @@ body{
  
 .top .section{
     width: calc(100% / 3);
-    height: 100%;
 }
-.top .section1{
-    height: 70%;
+.top .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
-
 .top .section2{
     height: 100%;
     color: white;    
@@ -159,67 +163,105 @@ body{
 }
 
 /* d-Day */
-.d-day .d-day-form{
-    width: 280px;
-    height: 260px;
+.d-day{
+    transform: translateY(15px);
+}
+.d-day .add-btn{
+    all: unset;
+    width: 300px;
+    height: 70px;
     background-color: #fff9;
+    /* border: 1px solid rgb(42, 173, 101) ; */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'KOTRAHOPE';
+    color: rgb(42, 173, 101);
+    font-size: 30px;
+}
+.d-day .add-btn:hover {
+    transform: scale(0.99);
+
+    /* box-shadow: 0 0 0 1px rgb(42, 173, 101) inset; 인라인으로 보더 넣기 */
+}
+.d-day .add-btn i{
+    margin-left: 20px;
+}
+.d-day .d-day-form{
+    width: 300px;
+    height: 280px;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 1px 3px #8889 ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing:0px;
     color: #666;
-
+    position: absolute;
+    top: 0px;
 }
-.d-day .input-title{
+.d-day h1{
+    font-family: 'KOTRAHOPE';
+    font-size: 35px;
+    color: rgb(42, 173, 101);
+}
+.d-day .input{
     all: unset;
     width: 200px;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-}
-.d-day .date{
-    all: unset;
-    width: 200px;
-    height: 25px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #666;
     padding-bottom: 5px;
     line-height: 25px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
-.d-day .submit{
+.d-day .btn{
     all: unset;
+    font-weight: 200;
     cursor: pointer;
-    width: 200px;
-    height: 50px;
-    background-color: rgb(77, 126, 190);
-    border-radius: 12px;
-    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(42, 173, 101);
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
     color: #fff;
+    margin: 15px 5px;
 }
-.d-day .submit:hover{
+.d-day .btn:first-child{
+    background-color: transparent;
+    border: 1px solid rgb(42, 173, 101);
+    color: rgb(42, 173, 101);
+}
+.d-day .btn:hover{
     transform: scale(0.99);
+    opacity: 0.9;
 }
 .d-day .d-daybox{
     width: 300px;
     height: 300px;
-    border-radius: 12px;
-    background-color: pink;
     
 }
 .d-day .d-daybox li{
-    background-color: #ddd;
+    background-color: rgb(42, 173, 101);
     border-radius: 12px;
     padding: 20px 0;
     margin: 10px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
+}
+.d-day .d-daybox li button{
+    all: unset;
+    font-size: 30px;
+}
+.d-day .d-daybox li button:hover{
+    transform: scale(0.9);
 }
 
 

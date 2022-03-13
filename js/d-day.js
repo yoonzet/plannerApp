@@ -2,8 +2,12 @@ const inputTitle = document.querySelector('.input-title');
 const inputDate = document.querySelector('.date');
 const dDayForm = document.querySelector('.d-day-form');
 const dDayBox = document.querySelector('.d-daybox');
+const addBtn = document.querySelector('.add-btn');
+const cancel = document.querySelector('.cancel');
+
 
 const DDAYS_KEY = 'D-Day';
+const HIDDEN_CLASS = 'form-hidden'
 
 let dDays = [];
 
@@ -27,7 +31,7 @@ function dDay(){
     if(leftDay == result){
          diffResult = 'D-Day';
     }else if(leftDay < result){
-        diffResult = `D+${diffResult}`;
+        diffResult = `D+${diffResult}`; 
     }else{
         diffResult = `D-${diffResult}`
     }
@@ -44,15 +48,15 @@ function deleteDday(event) {
     saveDdays();
 }
 
-function printDday(newDdayTitle, newDdayDate){
+function printDday(newDdayTitle){
     const li = document.createElement('li');
     li.id = newDdayTitle.id;
     const span = document.createElement('span');
     const h2 = document.createElement('h2')
     const button = document.createElement('button');
 
-    span.innerText = newDdayTitle.txt;
-    h2.innerText = dDay();
+    span.innerText = newDdayTitle.title;
+    h2.innerText = newDdayTitle.Dday;
     button.innerText = '×';
 
     li.appendChild(span);
@@ -72,7 +76,7 @@ function dDaySubmit(event){
 
     const dDayObj = {
         title: newDdayTitle,
-        days: newDdayDate,
+        Dday: newDdayDate,
         id: Date.now(),
     }
 
@@ -81,9 +85,20 @@ function dDaySubmit(event){
     printDday(dDayObj);
     saveDdays();
 
+    dDayForm.classList.add(HIDDEN_CLASS);
+
+
+
+}
+
+function formHidden(){
+    dDayForm.classList.toggle(HIDDEN_CLASS);
 }
 
 dDayForm.addEventListener('submit', dDaySubmit);
+cancel.addEventListener('click',formHidden);
+addBtn.addEventListener('click',formHidden);
+
 
 const savedDdays = localStorage.getItem(DDAYS_KEY);
 

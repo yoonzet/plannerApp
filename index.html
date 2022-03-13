@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
     <script defer src="./js/login.js"></script>
     <script defer src="./js/d-day.js"></script>
@@ -40,14 +40,21 @@
     <div class="top row">
         <div class="section section1 cell">
             <div class="d-day">
-                <form class="d-day-form">
-                    <input class="input-title" type="text" placeholder="Title" required>
-                    <input class="date" type="date" name="d-day" required>
-                    <input class="submit" type="submit" value="+">
+                <button class="add-btn">
+                    <p>D-DAY</p> 
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <form class="d-day-form form-hidden">
+                    <h1>D-DAY</h1>
+                    <input class="input input-title" type="text" placeholder="Title" required>
+                    <input class="input date" type="date" name="d-day" required>
+                    <div class="btn-wrap">
+                        <input class="btn cancel" type="button" value="cancel">
+                        <input class="btn submit" type="submit" value="add">
+                    </div>
+
                 </form>
                 <ul class="d-daybox">
-                    <!-- <li class="d-daybox-title">시험</li>
-                    <li class="d-daybox-count">D-20</li> -->
                 </ul>
             </div>
         </div>
