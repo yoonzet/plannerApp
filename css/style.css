@@ -58,7 +58,7 @@ body{
     height: 100vh;
     position: absolute;
     z-index: -2;
-    background-image: url('/img/cloud.jpeg');
+    background-image: url('../img/cloud.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -70,7 +70,7 @@ body{
     height: 100%;
     position: absolute;
     z-index: 66;
-    background-image: url('/img/cloud.jpeg');
+    background-image: url('../img/cloud.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
